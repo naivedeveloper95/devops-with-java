@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "FlightservicesApplication",
+      "request": "launch",
+      "mainClass": "com.satyam.springcloud.FlightservicesApplication",
+      "projectName": "flightservices"
+    },
+    {
+      "type": "java",
+      "name": "ProductserviceApplication",
+      "request": "launch",
+      "mainClass": "com.satyam.springcloud.ProductserviceApplication",
+      "projectName": "productservice"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CouponserviceApplication<couponservice>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.satyam.springcloud.CouponserviceApplication",
+      "projectName": "couponservice",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

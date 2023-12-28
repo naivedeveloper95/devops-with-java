@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  web:
+    image: httpd
+    container_name: mywebserver
+    networks:
+      - webnetwork
+    ports:
+      - "8080:80"
+    volume:
+      - myvol:/data
+  database:
+    image: redis
+    container_name: mydatabase
+    ports:
+      - "8081:6379"
+networks:
+  webnetwork:
+    driver: "bridge"
+  dbnetworks:
+    driver: "bridge"
+volumes:
+  myvol:
